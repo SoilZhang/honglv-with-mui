@@ -1,0 +1,30 @@
+.mui-scroll-wrapper .mui-content {
+  background-color: #fff;
+}
+.mui-scroll-wrapper .mui-content .mui-row {
+  padding: 0 5px;
+}
+.mui-scroll-wrapper .mui-content .mui-row .mui-col-xs-12 {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0px;
+}
+.mui-scroll-wrapper .mui-content .mui-row .mui-col-xs-12 > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mui-scroll-wrapper .mui-content .mui-row .mui-col-xs-12 > a > img {
+  height: 100px;
+  margin-right: 10px;
+}
+.mui-scroll-wrapper .mui-content .mui-row .mui-col-xs-12 > a > h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.mui-scroll-wrapper .mui-content .mui-row .mui-col-xs-12 > a > span {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+}

@@ -1,0 +1,222 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  //background: #eee;
+  //font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  //font-size: 14px;
+  //color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+/*����-S*/
+.mui-off-canvas-wrap{
+  .mui-inner-wrap{
+    .mui-off-canvas-left{
+      img{
+        width: 100%;
+      }
+      li{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        border-top: 1px solid #ccc;
+        &:last-of-type{
+          border-bottom: 1px solid #ccc;
+        }
+        >a{
+          padding-left: 20px;
+          color: #000;
+          font-size: 14px;
+          float: left;
+        }
+        >i{
+          font-size: 14px;
+          float: right;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+/*����-E*/
+
+//�ֲ�
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  >div{
+    .swiper-wrapper{
+    }
+    .swiper-pagination{
+      text-align: center;
+      .swiper-pagination-bullet{
+        position: absolute;
+        &:first-of-type{
+          right: 40px !important;
+        }
+        &:last-of-type {
+          right: 30px !important;
+        }
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #ccc;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  >a{
+    width: 100%;
+    >img{
+      width: 100%;
+    }
+  }
+}
+.swiper-container{
+  .swiper-wrapper{
+    .swiper-slide{
+      position: relative;
+      >a{
+        >p{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 9;
+          height: 30px;
+          line-height: 30px;
+          background-color: #000;
+          opacity: .5;
+          color: #ccc;
+          width: 100%;
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .swiper-pagination{
+    text-align: right;
+    bottom: 0;
+    height: 30px;
+    >span{
+      position: absolute;
+      top: 11px;
+      &:first-of-type{
+        right: 40px;
+      }
+      &:last-of-type{
+        right: 16px;
+      }
+      //top: 50%;
+      //transform: translateY(-50%);
+      //z-index: 10;
+      //background-color: #fff;
+    }
+  }
+}
+
+/*tab��-S*/
+.mui-content{
+  background-color: #fff;
+}
+.tab{
+  padding: 0 10px;
+  .nav-tabs{
+    border-bottom:0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    >li{
+      width: 25%;
+      text-align: center;
+      &.active{
+        border-bottom: 2px solid #666;
+      }
+      >a{
+        border: 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;;
+        &:hover{
+          border: 0;
+          background-color: #efeff4;
+        }
+      }
+    }
+  }
+  .tab-content{
+    .tab-pane{
+      >ul{
+        >li{
+          //width: 48%;
+          float: left;
+          height: 270px;
+          padding: 2% 2%;
+          &:nth-of-type(odd){
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+          }
+          &:nth-of-type(even){
+            border-bottom: 1px solid #ccc;
+          }
+          .content{
+            width: 100%;
+            height: 220px;
+            position: relative;
+            >img{
+              width: 96%;
+              height: 220px;
+            }
+            >.tab-update{
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 96%;
+              height: 30px;
+              line-height:30px;
+              text-align: center;
+              background-color: #000;
+              opacity: .5;
+              color: #fff;
+            }
+          }
+          h3{
+            text-align: center;
+            color: #bbb;
+            font-size: 12px;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+/*tab栏-E*/
+
+/*�˵�*/
+.mui-off-canvas-left, .mui-off-canvas-right {
+  background: #fff;
+}
